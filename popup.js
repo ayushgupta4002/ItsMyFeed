@@ -300,14 +300,9 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   geminiApiKeyInput.addEventListener('input', () => {
-    const apiKey = geminiApiKeyInput.value.trim();
-    if (apiKey && !apiKey.startsWith('AIzaSy')) {
-      geminiApiKeyInput.style.borderColor = '#f56565';
-      geminiApiKeyInput.title = 'Invalid API key format. Should start with "AIzaSy"';
-    } else {
-      geminiApiKeyInput.style.borderColor = '';
-      geminiApiKeyInput.title = '';
-    }
+    // Clear any existing validation styling
+    geminiApiKeyInput.style.borderColor = '';
+    geminiApiKeyInput.title = '';
   });
 
   // Load initial stats

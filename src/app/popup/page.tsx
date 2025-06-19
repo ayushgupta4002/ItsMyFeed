@@ -185,13 +185,8 @@ export default function Popup() {
       setAiFilterError('');
     }
     
-    // Validate API key format (optional but if provided should look like a valid API key)
-    if (geminiApiKey.trim() && !geminiApiKey.trim().startsWith('AIzaSy')) {
-      setApiKeyError('Invalid API key format. Should start with "AIzaSy"');
-      isValid = false;
-    } else {
-      setApiKeyError('');
-    }
+    // Clear any existing API key errors
+    setApiKeyError('');
     
     return isValid;
   };
@@ -316,7 +311,7 @@ export default function Popup() {
             type="password"
             value={geminiApiKey}
             onChange={(e) => setGeminiApiKey(e.target.value)}
-            placeholder="AIzaSy... (your Gemini API key)"
+            placeholder="Enter your Gemini API key"
             className={`w-full p-4 bg-gray-800/80 backdrop-blur-sm border border-gray-700 rounded-lg text-white text-sm font-medium transition-all duration-300 focus:outline-none focus:border-red-500 focus:shadow-lg focus:shadow-red-500/20 placeholder:text-gray-500 placeholder:font-normal ${
               apiKeyError ? 'border-red-500' : ''
             }`}
@@ -535,6 +530,16 @@ export default function Popup() {
         showStatus ? 'block animate-slide-in shadow-lg' : 'hidden'
       }`}>
         {statusMessage}
+      </div>
+
+      {/* Footer */}
+      <div className="text-center mt-8 pt-6 border-t border-gray-800">
+        <div className="text-sm text-gray-400 font-medium">
+          Made with <span className="text-red-500">❤️</span> for a better YouTube experience
+        </div>
+        <div className="text-xs text-gray-500 mt-2">
+         <a href="https://github.com/ayushgupta4002/ItsMyFeed" target="_blank" rel="noopener noreferrer"> ⭐ <strong>Star this repo</strong> if it helps you filter your feed!</a>
+        </div>
       </div>
     </div>
   );

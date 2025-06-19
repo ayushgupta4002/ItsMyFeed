@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "YouTube Video Filter",
+  "name": "ItsMyFeed",
   "version": "1.0.0",
   "description": "Hide videos on YouTube based on title keywords",
   "permissions": ["storage", "scripting", "activeTab"],
