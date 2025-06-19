@@ -121,14 +121,6 @@
 4. **Create new project** or select existing one
 5. **Generate API key** - copy the key
 
-
-
-### **API Usage & Costs**
-
-- **Free tier**: 15 requests per minute, 1,500 requests per day
-- **Typical usage**: 1-5 requests per YouTube page load
-- **Cost**: Free tier covers most users; paid plans start at $0.50/1M tokens
-
 ---
 
 ## 🛠️ Development
@@ -138,8 +130,6 @@
 - **Frontend**: Next.js 15.3.3 + React 19 + TypeScript
 - **Styling**: Tailwind CSS 4
 - **AI Integration**: Google Gemini API via `@google/genai`
-- **Icons**: Lucide React
-- **Build**: Custom build script with esbuild
 
 ### **Project Structure**
 
@@ -183,15 +173,7 @@ npm run build:extension
 
 ---
 
-## 🔒 Privacy & Permissions
-
-### **Required Permissions**
-
-- **`storage`**: Save your filter settings locally
-- **`scripting`**: Inject content script into YouTube pages
-- **`activeTab`**: Access current YouTube tab for filtering
-- **`https://www.youtube.com/*`**: Filter content on YouTube
-- **`https://generativelanguage.googleapis.com/`**: AI analysis via Gemini API
+## 🔒 Privacy
 
 ### **Data Privacy**
 
@@ -226,18 +208,11 @@ npm run build:extension
 3. **Try refreshing the page**
 4. **Check if video titles actually contain keywords**
 
-### **Performance Issues**
-
-1. **Reduce number of keywords** (max 20 recommended)
-2. **Use more specific AI filter descriptions**
-3. **Clear browser cache** if needed
-4. **Disable other YouTube extensions** temporarily
-
 ---
 
 ## 🤝 Contributing
 
-We welcome contributions! Here's how to get started:
+I welcome contributions! Here's how to get started:
 
 1. **Fork the repository**
 2. **Create a feature branch**: `git checkout -b feature-name`
@@ -260,21 +235,11 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ---
 
-## 🙏 Acknowledgments
-
-- **Google Gemini AI** for intelligent content analysis
-- **Lucide** for beautiful icons
-- **Tailwind CSS** for styling system
-- **Next.js** for the development framework
-- **YouTube** for the platform we're enhancing
-
----
-
 ## 📞 Support
 
 - 🐛 **Bug Reports**: [Open an issue](https://github.com/ayushgupta4002/ItsMyFeed/issues)
 - 💡 **Feature Requests**: [Start a New Feature](https://github.com/ayushgupta4002/ItsMyFeed/issues)
-- 🐦 **X (Twitter)**: [@your_twitter_handle](https://x.com/Ayush3241)
+- 🐦 **X (Twitter)**: [@Ayush3241](https://x.com/Ayush3241)
 
 ---
 
