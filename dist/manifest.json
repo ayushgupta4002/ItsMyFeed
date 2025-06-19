@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Video Filter",
+  "version": "1.0.0",
+  "description": "Hide videos on YouTube based on title keywords",
+  "permissions": ["storage", "scripting", "activeTab"],
+  "host_permissions": ["https://www.youtube.com/* ","https://generativelanguage.googleapis.com/"],
+
+
+  "action": {
+    "default_popup": "popup.html"
+
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+"icons": {
+  "96": "logo.png",
+  "144": "logo.png",
+  "192": "logo.png"
+},
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  }
+
+
+}

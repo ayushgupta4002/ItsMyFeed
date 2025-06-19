@@ -1,0 +1,1 @@
+"use strict";(()=>{var r=["shorts","asmr","mr beast","bollywood"];function o(){document.querySelectorAll("ytd-rich-item-renderer").forEach(e=>{let t=e.querySelector("#video-title");if(!t)return;r.some(s=>t.textContent?.toLowerCase().includes(s.toLowerCase()))&&(e.style.display="none")})}o();var n=new MutationObserver(o);n.observe(document.body,{childList:!0,subtree:!0});})();

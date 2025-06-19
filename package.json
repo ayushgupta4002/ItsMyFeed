@@ -1,0 +1,37 @@
+{
+  "name": "youtube-video-filter",
+  "version": "1.0.0",
+  "description": "Hide videos on YouTube based on title keywords",
+  "scripts": {
+    "dev": "next dev",
+    "start": "next start",
+    "build:next": "next build",
+    "build:content": "esbuild src/content/content.ts --bundle --outfile=public/content.js --minify",
+    "build": "node build.js",
+    "build:extension": "node build.js",
+    "lint": "next lint"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@google/genai": "^1.5.1",
+    "lucide-react": "^0.516.0",
+    "next": "15.3.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/chrome": "^0.0.326",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "esbuild": "^0.25.5",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.3",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
